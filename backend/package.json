@@ -18,6 +18,7 @@
   "main": "api.js",
   "type": "module",
   "scripts": {
+     "start": "node api.js",
     "server": "nodemon ./api.js"
   },
   "author": "khushi verma",
