@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #000;  /* Black text */
+    --secondary-color: tomato;  /* Highlight color */
+    --border-color: #ff4500;  /* Red border */
+    --bg-light: #fff;  /* White background */
+    --bg-dark: #000;  /* Dark background */
+    --text-light: #fff;
+    --text-dark: #000;
+}
+
+/* Container Styling */
+.my-orders {
+    padding: 20px;
+}
+
+.myordersp {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-dark);
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+/* Orders Container */
+.my-orders .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%; /* Increased width */
+    margin: auto; /* Centering */
+}
+
+/* Order Card Styling */
+.my-orders-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Takes full width */
+    padding: 20px; /* Increased padding */
+    border: 2px solid var(--border-color);
+    background: var(--bg-light);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.my-orders-order:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Item Image */
+.my-orders-order img {
+    width: 60px; /* Slightly bigger */
+}
+
+/* Order Details */
+.my-orders-order p {
+    margin: 0;
+    font-size: 16px; /* Increased font size */
+    color: var(--primary-color);
+    flex-grow: 1; /* Helps with alignment */
+}
+
+/* Status Dropdown */
+.my-orders-order select {
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px; /* Fixed width */
+}
+
+/* Responsive Styling */
+@media (max-width: 900px) {
+    .my-orders .container {
+        width: 95%;
+    }
+
+    .my-orders-order {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .my-orders-order select {
+        width: 100%;
+    }
+}
+
+/* Track Order Button */
+.my-orders-order button {
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px; /* Match dropdown width */
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.my-orders-order button:hover {
+    background-color: var(--border-color);
+    border-color: var(--border-color);
+    color: var(--bg-light);
+}
+
+/* Responsive Styling */
+@media (max-width: 900px) {
+    .my-orders-order button {
+        width: 100%;
+        padding: 8px;
+    }
+}
