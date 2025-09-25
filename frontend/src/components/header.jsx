@@ -58,7 +58,7 @@ navigate("/")
           <Link to='/'><img src='image/sw.webp' className='w-full' alt='mg' /> </Link>  
           </div>
             <div className=''>
-               <span className='font-bold border-b-[3px] border-[black]'> Ratanda </span>Jodhpur,Rajasthan,india <RxCaretDown onClick={show} fontSize={25} className='font-bold inline  text-[#fc8019]'/>
+               <span className='font-bold border-b-[3px] border-[black]'> Sikri </span>Modinagar,Ghaziabad,india <RxCaretDown onClick={show} fontSize={25} className='font-bold inline  text-[#fc8019]'/>
            </div>
 
         <nav className='flex list-none gap-10 ml-auto mr-2 font-semibold text-[18px] cursor-pointer'>
