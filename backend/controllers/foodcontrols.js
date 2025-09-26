@@ -1,4 +1,4 @@
-import foodModel from '../models/foodModel.js'
+import foodModel from '../models/foodmodel.js'
 import fs from 'fs'
 
 
